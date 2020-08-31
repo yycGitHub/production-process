@@ -1,0 +1,96 @@
+.content {
+	text-align: center;
+}
+
+a {
+	position: relative;
+	display: inline-block;
+	width:50px;
+	height:50px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	background-color: #ddd;
+}
+
+.block {
+	position: relative;
+	display: inline-block;
+	width:50px;
+	height:50px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	background-color: #fff;
+}
+
+.map {
+	position:relative;
+	font-size: 5px;
+	top:-15px;
+	right:0px;
+	color: #00f;
+	content: "";
+}
+
+.delete {
+	position:relative;
+	top:-15px;
+	right:-10px;
+	height:15px;
+	width:15px;
+}
+
+
+.red {
+	color:#f00;
+}
+
+.blue {
+	color:#00f;
+}
+
+.yellow {
+	color:#FFD700;
+}
+
+.purple {
+	color:#800080;
+}
+
+.coral {
+	color:#FF7F50;
+}
+
+.cyan {
+	color:#00FFFF;
+}
+
+.brown {
+	color:#A52A2A;
+}
+
+.tan {
+	color:#D2B48C;
+}
+
+.white {
+	color:#fff;
+	background-color: #fff;
+}
+
+p, span, h3 {
+	margin:0px;
+	padding:0px;
+}
+
+.num {
+	width:50px;
+	height:30px;
+	line-height:30px;
+	background-color: #fff;
+}
+
+.content-a a:hover {
+	background:red;
+}

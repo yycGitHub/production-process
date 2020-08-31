@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+		<style>
+			.suCai17-info h2 {
+				color: #333;
+				font-size: 15px;
+				padding-bottom: 10px;
+				padding-top: 10px;
+				border-bottom: 1px dotted #999;
+			}
+		
+		</style>
+    </head>
+    <body>
+        <div class="suCai17-content" align="center">
+            <div class="suCai17-background clearfix" align="left">
+                <div class="suCai17-nav hd">
+                    <h2 class="suCai17-logo">
+                        模块
+                    </h2>
+                    <ul class="suCai17-nav-list">
+                        <li class="eve suCai17-item on">
+                            <i class="icon icon-image01"></i>
+                            <span class="suCai17-title">关于我们</span>
+							<a class="icon1 icon-del del"></a><a class="icon1 icon-up up"></a><a class="icon1 icon-down down"></a>
+                        </li>
+                        <li class="eve suCai17-item">
+                            <i class="icon icon-image02"></i>
+                            <span class="suCai17-title">用户协议</span>
+							<a class="icon1 icon-del del"></a><a class="icon1 icon-up up"></a><a class="icon1 icon-down down"></a>
+                        </li>
+                        <li class="eve suCai17-item">
+                            <i class="icon icon-image03"></i>
+                            <span class="suCai17-title">联系我们</span>
+							<a class="icon1 icon-del del"></a><a class="icon1 icon-up up"></a><a class="icon1 icon-down down"></a>
+                        </li>
+                        <li class="eve suCai17-item">
+                            <i class="icon icon-image04"></i>
+                            <span class="suCai17-title">注册条款</span>
+							<a class="icon1 icon-del del"></a><a class="icon1 icon-up up"></a><a class="icon1 icon-down down"></a>
+                        </li>
+                        <li class="eve suCai17-item">
+                            <i class="icon icon-image05"></i>
+                            <span class="suCai17-title">积分获取</span>
+							<a class="icon1 icon-del del"></a><a class="icon1 icon-up up"></a><a class="icon1 icon-down down"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="suCai17-info bd">
+                    <ul>
+                        <li>
+                            <h2>关于我们</h2>
+                            <div class="suCai17-side">
+                                <ul>
+                                    <li>
+                                        <input type="text" />
+                                    </li>
+									<li>
+                                        <input type="text" />
+                                    </li>
+									<li>
+                                        <input type="text" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>用户协议</h2>
+                            <div class="suCai17-side">
+                                <ul>
+                                    <li>
+                                       <input type="text" />
+                                    </li>
+									<li>
+                                       <input type="text" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>联系我们</h2>
+							<div class="suCai17-side">
+                            <ul>
+								<li>
+								   <input type="text" />
+								</li>
+								<li>
+								   <input type="text" />
+								</li>
+							</ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                       <li>
+                            <h2>注册条款</h2>
+                            <div class="suCai17-side">
+                                <ul>
+                                   <li>
+                                       <input type="text" />
+                                    </li>
+									<li>
+                                       <input type="text" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>积分获取</h2>
+                            <div class="suCai17-side">
+                                <ul>
+                                    <li>
+                                       <input type="text" />
+                                    </li>
+									<li>
+                                       <input type="text" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+			<input type="button" value="保存"/>
+        </div>
+        <script type="text/javascript">
+            
+            jQuery(".suCai17-background").slide({
+                autoPlay: false,
+                trigger: "click",
+                easing: "easeOutCirc",
+                delayTime: 1000
+            });
+
+           
+			
+			$(".suCai17-nav-list").on('click', 'a', function(event) {
+			    event.preventDefault;
+			    var parent=$(this).parent();
+			    var parents=$(this).parents(".suCai17-nav-list");
+			    var len=parents.children().length;
+			    if($(this).is(".up") && parent.index()==0){
+					alert("已经到顶了！");
+					return false;
+			    }else if($(this).is(".down")&& parent.index()==len-1){
+				    alert("已经到底了！");
+				    return false;
+			    }
+			    switch (true) {
+					case $(this).is(".up"):
+						var prev = parent.prev();
+						parent.insertBefore(prev);
+						break;
+					case $(this).is(".down"):
+						var next = parent.next();
+						parent.insertAfter(next);
+						break;
+					case $(this).is(".del"):
+						parent.remove();
+						$(".suCai17-info").parent();
+						break;
+				}
+			    
+			});
+
+        </script>
+    </body>
+</html>

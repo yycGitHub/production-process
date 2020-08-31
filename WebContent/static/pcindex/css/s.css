@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* ---------- sureserve 前端框架 ----------
+*
+* s.css 重定义浏览器默认样式
+* Created & Modified by yangfazhi
+* Date modified 2018.12.03
+*
+*/
+*{word-wrap:break-word;}
+html,body{width:100%;height:100%;}
+body{font:12px/1.5 \5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif;}
+html,body,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,ol,ul,li,p,form,input,button,select,textarea,checkbox,radio{margin:0;padding:0;}
+ul,ol{list-style:none;}
+h1,h2,h3,h4,h5,h6,b{font-size:100%;font-weight:normal;}
+i,em,cite{font-style:normal;}
+input[type="button"],a{text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent;}
+a:active,a:focus{outline:none;}
+img{border:0;vertical-align:middle;max-width:100%;}
+table{border-collapse:collapse;border-spacing:0;table-layout:fixed;}/* 去掉各Table cell的边距并让其边重合-列宽平均化*/
+
+/*html5 reset*/
+header,menu,nav,footer,section,article,aside,embed,datalist,command,details,summary,dialog,embed,fieldset,figure,source,figure,figcaption,legend,address{display:block;margin:0;padding:0}
+time{display:inline}
+audio,canvas,video{display:inline-block;}
+
+/*public*/
+.maxbox{width:100%;}                     /*最大宽度*/
+.hides{display:none;}                    /*隐藏*/
+.indent{text-indent:2em;}                /*缩进*/
+.song{font-family:\5b8b\4f53;}         /*宋体*/
+.f_l{float:left;}                        /*左浮动*/
+.f_r{float:right;}                       /*右浮动*/
+.t_r{text-align:right;}                  /*右对齐*/
+.t_l,caption,th{text-align:left;}        /*左对齐*/
+.t_c{text-align:center;}                 /*居中对齐*/
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1;}                        /*清除浮动*/
+.framing{width:100%;height:100%;vertical-align:middle;z-index:1;}/*框架去默认滚动条*/
+
+/*form*/
+input,button,select,textarea,input[type="button"]{outline:none;}
+input[type="text"]{text-indent:10px;}
+input[type="checkbox"],input[type="radio"]{vertical-align:sub;}
+input,button{overflow:visible;}
+textarea{padding:2px;overflow:auto;vertical-align:top;resize:vertical;}
+
+/*margin or padding*/
+.mar_t{margin-top:10px;}
+.mar_l{margin-left:10px;}
+.mar_r{margin-right:10px;}
+.mar_f{margin-bottom:10px;}
+.pad_t{padding-bottom:10px;}
+.pad_l{padding-left:10px;}
+.pad_r{padding-right:10px;}
+.pad_f{padding-bottom:10px;}
+
+/*font-size*/
+.font12{font-size:12px}
+.font14{font-size:14px}
+.font16{font-size:16px}
+.font18{font-size:18px}
+.font24{font-size:24px}
+.font30{font-size:30px}
+.font36{font-size:36px}
+.font24,.font30,.font36{line-height:1;}
+
+/*icon font*/
+@font-face {font-family:"iconfont";
+	src:url('../font/iconfont.eot?t=1478505415'); /*IE9*/
+	src:url('../font/iconfont.eot?t=1478505415#iefix') format('embedded-opentype'), /*IE6-IE8*/
+	url('../font/iconfont.svg?t=1478505415#iconfont') format('svg'), /*chrome, firefox*/
+	url('../font/iconfont.ttf?t=1478505415') format('truetype'), /*chrome,firefox,opera,Safari,Android,iOS 4.2+*/
+	url('../font/iconfont.woff?t=1478505415') format('woff'); /*iOS 4.1-*/
+}
+.iconfont{
+	font-family:"iconfont"!important;font-style:normal;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-text-stroke-width:0.2px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=hIEfix.png,sizingMethod=crop);zoom:1;/*IE8,IE7*/
+}
