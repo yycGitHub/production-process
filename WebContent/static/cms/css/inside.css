@@ -1,0 +1,76 @@
+﻿@charset "utf-8";
+.wrapper{margin:0 auto;width:1140px;}
+a{color:#454545;}
+a:hover{color:#4bc326;}
+
+.bg{background:#f4f4f4;}
+.martop20{margin-top:20px;}
+
+/*头部*/
+.header{height:60px;line-height:60px;background:#23262e;}
+.header,.header a{color:#ccc;}
+.header a:hover{color:#fff;}
+.header h1{margin:16px 40px 0 0;font-size:24px;line-height:1;}
+.header h1 a{color:#4bc326;}
+	.search{float:left;}
+	.search .input_txt{border:none;background:#333;color:#000;}
+	
+	.head_nav ul,.head_nav li,.head_nav li a{float:left;}
+	.head_nav li{padding:0 0 0 10px;}
+
+/*menu*/
+.menu{padding:10px 0;background:#fff;}
+.menu li,.menu li a{float:left;}
+.menu li a{padding:0 10px;height:30px;line-height:30px;border-radius:2px;}
+.menu li a.cur{background:#4bc326;color:#fff;}
+
+.submenu{padding:0 0 10px 0;background:#fff;border-bottom:1px solid #eee;}
+.submenu ul{padding-top:10px;border-top:1px solid #eee;}
+.submenu li,.submenu li a{float:left;}
+.submenu li a{padding:0 10px;height:30px;line-height:30px;border-radius:2px;}
+.submenu li a.cur{background:#4bc326;color:#fff;}
+
+/*主体*/
+.container{padding:20px 0;}
+.mainbody{width:780px;}
+.right_sidebar{width:340px;}
+
+/*列表*/
+figure{background:#fff;}
+figcaption{height:48px;line-height:48px;text-indent:20px;color:#666;}
+
+.list li{padding:10px 0;float:left;width:100%;border-top:1px dotted #dcdcdc;text-indent:20px;}
+.list li a{font-size:16px;color:#333;}
+.list li p{padding:6px 20px 0 0;color:#999;}
+
+.list_side ul{border-top:1px dotted #dcdcdc;list-style-type:disc;padding:10px 0 10px 40px;color:#666;}
+.list_side li{height:30px;line-height:30px;}
+.list_side li a{color:#1975b6;}
+.list_side li a:hover{border-bottom:1px solid;}
+
+.list_keyword p{padding:10px;border-top:1px dotted #dcdcdc;}
+.list_keyword a{margin:5px 0 5px 5px;display:inline-block;}
+
+/*详情*/
+.show{padding:20px;width:740px;background:#fff;}
+.show h2{margin-bottom:20px;font-size:24px;line-height:24px;color:#333;}
+.show h6{padding:0 0 10px 0;font-size:14px;color:#999;}
+
+.show_main p{padding:10px 0;}
+
+/*评论*/
+.comment ul{padding:10px 0;border-top:1px dotted #dcdcdc;color:#999;}
+.comment .txt{padding:20px 0;color:#454545;}
+.comment a{color:#999;}
+.comment a:hover{color:#4bc326;}
+
+.reply_txt{float:left;margin-bottom:20px;padding:15px;width:710px;background:#f3eedd;border-radius:4px;}
+.reply_txt b{color:#a58618;}
+.reply_txt b.green{color:#090;}
+.reply_txt .con{padding-top:10px;color:#333;}
+
+/*底部*/
+.footer{padding:30px 0;color:#999;border-top:1px solid #e8e8e8;}
+
+figure.martop20 .highlight{color:#DF0037;}
+figure.martop20 p span.highlight{color:#DF0037;font-size:14px;}
