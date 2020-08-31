@@ -1,0 +1,148 @@
+@charset "utf-8";
+*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
+/*单选和多选和并样式*/
+.checkbox label,
+.radio label{display:inline-block;vertical-align:middle;position:relative;padding-left:5px;font-size:14px;line-height:18px;width:80%;}
+.checkbox label::before,
+.radio label::before{content:"";width:17px;height:17px;left:0;border:1px solid #ccc;background:#fff;}
+.checkbox label::before,
+.radio label::before,
+.checkbox label::after,
+.radio label::after{display:inline-block;position:absolute;margin-left:-20px;}
+
+/*-----------------多选-----------------*/
+.checkbox label::before{
+  top:1px;
+  border-radius:3px;
+  -webkit-transition:border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition:border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition:border 0.15s ease-in-out, color 0.15s ease-in-out;
+}  
+.checkbox label::after{
+  width:9px;
+  height:6px;
+  left:4px;
+  top:5px;
+  font-size:0;
+  color:#555;
+  border:2px solid #fff;
+  border-top:none;
+  border-right:none;
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity:0;
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.checkbox input[type="checkbox"]:checked + label:after {
+  filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity:1;
+}/*IE原始显示*/  
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"]{opacity:0;z-index:1;}/*原始*/
+.checkbox input[type="checkbox"]:focus + label::before,
+.checkbox input[type="radio"]:focus + label::before{outline:0;}/*点击虚线*/
+.checkbox input[type="checkbox"]:checked + label::after,
+.checkbox input[type="radio"]:checked + label::after{font-family:"FontAwesome";content:"\f00c";}/*打勾字体*/
+		
+.checkbox.checkbox_circle label::before{border-radius:50%;}/*圆形多选框*/
+
+/*颜色样式*/
+.checkbox_default input[type="checkbox"]:checked + label::before,
+.checkbox_default input[type="radio"]:checked + label::before{background:#e6e6e6;border-color:#e6e6e6;}
+.checkbox_default input[type="checkbox"]:checked + label{color:#666;}
+
+.checkbox_primary input[type="checkbox"]:checked + label::before,
+.checkbox_primary input[type="radio"]:checked + label::before{background:#5a98de;border-color:#5a98de;}
+.checkbox_primary input[type="checkbox"]:checked + label{color:#5a98de;}
+
+.checkbox_secondary input[type="checkbox"]:checked + label::before,
+.checkbox_secondary input[type="radio"]:checked + label::before{background:#3bb4f2;border-color:#3bb4f2;}
+.checkbox_secondary input[type="checkbox"]:checked + label{color:#3bb4f2;}
+
+.checkbox_success input[type="checkbox"]:checked + label::before,
+.checkbox_success input[type="radio"]:checked + label::before{background:#5eb95e;border-color:#5eb95e;}
+.checkbox_success input[type="checkbox"]:checked + label{color:#5eb95e;}
+
+.checkbox_warning input[type="checkbox"]:checked + label::before,
+.checkbox_warning input[type="radio"]:checked + label::before{background:#f37b1d;border-color:#f37b1d;}
+.checkbox_warning input[type="checkbox"]:checked + label{color:#f37b1d;}
+
+.checkbox_danger input[type="checkbox"]:checked + label::before,
+.checkbox_danger input[type="radio"]:checked + label::before{background:#dd514c;border-color:#dd514c;}
+.checkbox_danger input[type="checkbox"]:checked + label{color:#dd514c;}
+
+/*-----------------单选-----------------*/
+.radio label::before{
+  top:0;
+  border-radius:50%;
+  -webkit-transition:border 0.15s ease-in-out;
+  -o-transition:border 0.15s ease-in-out;
+  transition:border 0.15s ease-in-out;
+}
+.radio label::after{
+  content:"";
+  width:11px;
+  height:11px;
+  left:3px;
+  top:3px;
+  border-radius:50%;
+  background:#555;
+  -webkit-transform:scale(0, 0);
+  -ms-transform:scale(0, 0);
+  -o-transform:scale(0, 0);
+  transform:scale(0, 0);
+  -webkit-transition:-webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -moz-transition:-moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -o-transition:-o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  transition:transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); 
+}
+.radio input[type="radio"]{opacity:0;z-index:1;}
+.radio input[type="radio"]:focus + label::before{outline:0;}
+.radio input[type="radio"]:checked + label::after{
+  -webkit-transform:scale(1, 1);
+  -ms-transform:scale(1, 1);
+  -o-transform:scale(1, 1);
+  transform:scale(1, 1);
+}
+.radio input[type="radio"]:disabled + label{opacity:0.65;}
+.radio input[type="radio"]:disabled + label::before{cursor:not-allowed;}
+input[type="checkbox"].styled:checked + label:after,
+input[type="radio"].styled:checked + label:after{font-family:'FontAwesome';content:"\f00c";}
+
+/*颜色样式*/
+.radio_default input[type="radio"] + label::after,
+.radio_default input[type="radio"]:checked + label::after{background:#e6e6e6;}
+.radio_default input[type="radio"]:checked + label::before{border-color:#e6e6e6;}
+.radio_default input[type="radio"]:checked + label{color:#f00;}
+
+.radio_primary input[type="radio"] + label::after,
+.radio_primary input[type="radio"]:checked + label::after{background:#5a98de;}
+.radio_primary input[type="radio"]:checked + label::before{border-color:#5a98de;}
+.radio_primary input[type="radio"]:checked + label{color:#5a98de;}
+
+.radio_secondary input[type="radio"] + label::after,
+.radio_secondary input[type="radio"]:checked + label::after{background:#3bb4f2;}
+.radio_secondary input[type="radio"]:checked + label::before{border-color:#3bb4f2;}
+.radio_secondary input[type="radio"]:checked + label{color:#3bb4f2;}
+
+.radio_success input[type="radio"] + label::after,
+.radio_success input[type="radio"]:checked + label::after{background:#5eb95e;}
+.radio_success input[type="radio"]:checked + label::before{border-color:#5eb95e;}
+.radio_success input[type="radio"]:checked + label{color:#5eb95e;}
+
+.radio_warning input[type="radio"] + label::after,
+.radio_warning input[type="radio"]:checked + label::after{background:#f37b1d;}
+.radio_warning input[type="radio"]:checked + label::before{border-color:#f37b1d;}
+.radio_warning input[type="radio"]:checked + label{color:#f37b1d;}
+
+.radio_danger input[type="radio"] + label::after,
+.radio_danger input[type="radio"]:checked + label::after{background:#dd514c;}
+.radio_danger input[type="radio"]:checked + label::before{border-color:#dd514c;}
+.radio_danger input[type="radio"]:checked + label{color:#dd514c;}
+
+

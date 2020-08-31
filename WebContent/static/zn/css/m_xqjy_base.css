@@ -1,0 +1,27 @@
+﻿@charset "utf-8";
+
+h2{margin:20px 10px 5px 10px;font-size:18px;line-height:18px;}
+h6{margin:0 0 5px 10px;color:#999;}
+
+.bg_f7f7f7{background:#f7f7f7;}
+
+.nav{background:#fe9728;border-bottom:1px solid #eee; }
+.nav ul{position:relative;}
+.nav li{float:left; padding: 0 15px;}
+.nav li a{padding:15px 0;float:left;width:100%;text-align:center; color:#fff}
+.nav li a.cur{color:#ff0;}
+.nav li a i{margin-bottom:5px;display:block;font-size:30px;line-height:30px;}
+
+.list li,.list li a{float:left;width:100%;}
+.list li{margin-top:5px;}
+.list li a{background:#fff;border-top:1px solid #eee;border-bottom:1px solid #eee;height:40px;line-height:40px;}
+.list li a nobr{margin-left:10px; width:80%;height:40px;overflow:hidden;text-overflow:ellipsis}
+.list li a em{margin-right:10px;font-family:\5b8b\4f53;font-size:24px;color:#aeaeae;}
+
+.show{padding:10px;color:#666;}
+.show p{padding:5px 0;}
+
+.wrapper{overflow: hidden;}
+
+/*底部*/
+.end{padding:10px 0;text-align:center;font-size:12px;color:#aeaeae;}

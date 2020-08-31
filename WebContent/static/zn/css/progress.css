@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* ---------- 进度条样式 ----------
+*
+* Created & Modified by ligm
+* Date modified 2017.07.18
+*
+*/
+.process{ line-height:25px; height:25px; }
+.process .progress-box{border:1px solid #333; background-color:#d2d2d3; width:368px; float:left; height:20; display:inline; margin-top:4px; position:relative}
+.process .progress-bar{
+	background: #6edc00
+		url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAKCAIAAAD6sKMdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkEwMEQ2REQ2M0MwODExRTE4OTJGQjE3NkJEOTE5OEM3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkEwMEQ2REQ3M0MwODExRTE4OTJGQjE3NkJEOTE5OEM3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTAwRDZERDQzQzA4MTFFMTg5MkZCMTc2QkQ5MTk4QzciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTAwRDZERDUzQzA4MTFFMTg5MkZCMTc2QkQ5MTk4QzciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6YOUiNAAAAGklEQVR42mIuesrA9P8fFP9F0P/+oogBBBgAgDUTTaSW7EUAAAAASUVORK5CYII=")
+		repeat-x;
+	display: inline-block;
+	font-size: 0;
+	height: 19px;
+	line-height: 0;
+	margin: 0;
+	overflow: hidden;
+	-moz-transition: width .3s ease-in-out;
+	-webkit-transition: width .3s ease-in-out;
+	-o-transition: width .3s ease-in-out;
+	-ms-transition: width .3s ease-in-out;
+	transition: width .3s ease-in-out;
+	width: 0
+}
+.process p{ border:1px solid #333; background-color:#d2d2d3; width:200px; float:left; height:12px; display:inline; margin-top:4px; position:relative }
+.process em{ position:absolute; left:1px; top:1px; background-color:#2661af; height:10px; overflow:hidden }
+.process span{ float:left; width:30px; text-align:right; }

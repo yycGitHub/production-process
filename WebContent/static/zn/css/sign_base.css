@@ -1,0 +1,49 @@
+﻿/*头部*/
+header,menu{height:40px;line-height:40px;background:#efeff0;}
+header{padding:0 10px;width:clac(100% - 20px);}
+header h1{font-size:18px;color:#666;}
+header a{color:#ccc;}
+header a:hover{color:#aeaeae;}
+menu{text-align:center;border-top:1px solid #e1e1e1;}
+menu li{padding:0 10px;display:inline-block;}
+menu a{font-size:16px;}
+menu a.cur{color:#06c;}
+
+/*-----------------------列表-----------------------*/
+/*--考勤记录详情--*/
+.list li{padding:10px;float:left;width:calc(100% - 20px);border-bottom:1px solid #eee;height:22px;line-height:22px;color:#666;}
+
+/*--课程列表--考勤记录--*/
+.list_txt{color:#666;}
+.list_txt li{padding:0 10px;}
+.list_txt li a{padding:10px 0;float:left;width:100%;border-top:1px solid #eee;position:relative;}
+.list_txt li:first-child a{border-top:none;}
+.list_txt p{margin-top:2px;}
+.list_txt i{position:absolute;right:0;top:28px;text-align:center;width:64px;height:30px;line-height:30px;border:1px solid;border-radius:4px;}
+.list_txt i.number{top:20px;}
+.list_txt i.sign_time{top:20px;width:48px;font-size:12px;}
+
+/*底部*/
+.end{padding:10px 0;text-align:center;font-size:12px;color:#aeaeae;}
+
+
+/*其它*/
+.time_list_info{padding:8px 10px;float:left;width:calc(100% - 20px);border-bottom:1px solid #eee;font-size:12px;color:#999;}
+
+.course_show_top{padding:5px 10px;width:calc(100% - 20px);color:#666;}
+.course_show_top p{padding-top:5px;}
+.course_show{padding:10px;width:calc(100% - 20px);border-top:5px solid #eee;color:#666;}
+.course_show p{padding-bottom:10px;}
+
+.course_show_tip{position:relative;overflow:hidden;}
+.course_show_tip i{position:absolute;right:-35px;top:4px;width:120px;height:32px;line-height:32px;text-align:center;font-size:12px;
+transform:rotate(35deg);
+-ms-transform:rotate(35deg); 	/* IE 9 */
+-moz-transform:rotate(35deg); 	/* Firefox */
+-webkit-transform:rotate(35deg); /* Safari 和 Chrome */
+-o-transform:rotate(35deg);
+}
+
+.sign_tip{padding:20px 0;text-align:center;background:#165c91;}
+.sign_tip b{display:block;margin-top:10px;font-size:20px;color:#ff0;}
+	.sign_img{display:inline-block;width:100px;height:100px;border-radius:100%;}

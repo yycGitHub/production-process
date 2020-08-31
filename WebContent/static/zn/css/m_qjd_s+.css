@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* ---------- sureserve 前端框架 ----------
+*
+* s+.css 重定义浏览器默认样式
+* Created & Modified by yangfazhi
+* Date modified 2016.11.01
+*
+*/
+
+*{word-wrap:break-word;}
+html,body{width:100%;height:100%;}
+body{font:14px/1.5 "微软雅黑";-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+html{-webkit-text-size-adjust:none;}
+html,body,img,div,dl,dt,dd,ul,li,input,p,h1,h2,h3,h4,h5,h6,form,textarea,span,header,menu,section{margin:0;padding:0;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6,b{font-size:100%;font-weight:normal;}
+h2{font-size:16px;}
+a{text-decoration:none;color:#666;}
+a:hover{color:#333;}
+i,em{font-style:normal;}
+input{outline:none;}
+
+/*img*/
+img{border:0;vertical-align:middle;max-width:100%;}
+a img,img{-ms-interpolation-mode:bicubic;}
+
+/*public*/
+
+.fl{float:left;}
+.fr{float:right;}
+.songti{font-family:\5b8b\4f53;}
+.martop{margin-top:10px;}
+.marleft{margin-left:10px;}
+.clearfix{overflow:hidden;_zoom:1;}
+
+/*font*/
+.font12{font-size:12px;}
+.font14{font-size:14px;}
+.font16{font-size:16px;}
+.font18{font-size:18px;}
+.font20{font-size:20px;}
+.font24{font-size:24px;}
+.font30{font-size:30px;}
+.font36{font-size:36px;}
+
+/*color*/
+.dark{color:#333;}
+.gray{color:#999;}
+.grayer{color:#ccc;}
+.blue{color:#359dee;}
+.green{color:#00af4c;}
+.green_min{color:#92cb64;}
+.orange{color:#ff5723;}
+.yellow{color:#fead20;}
+.purple{color:#9035ee;}
+.purple-min{color:#b18df9;}
+.red{color:#f00;}
+.pink{color:#fa3d86;}
+.white{color:#fff;}
+.black{ color:#000}
+
+
+/*bg color*/
+.bg_white{background:#fff;}
+.bg_blue{background:#359dee;}
+.bg_green{background:#00af4c;}
+.bg_green_min{background:#92cb64;}
+.bg_orange{background:#ff5723;}
+.bg_yellow{background:#fead20;}
+.bg_purple{background:#9035ee;}
+.bg_purple-min{background:#b18df9;}
+.bg_red{background:#f00;}
+.bg_pink{background:#fa3d86;}
+.bg_dcdcdc{background:#dcdcdc;}
+.bg_f5f5f5{background:#f5f5f5;}
+
+/*width*/
+.w50{width:50px;}
+.w100{width:100px;}
+.w150{width:150px;}
+.w200{width:200px;}
+.w250{width:250px;}
+.w300{width:300px;}
+.w400{width:400px;}
+.w500{width:500px;}
+.w600{width:600px;}
+.maxbox{width:100%;}
+.w_98{width:98%;}
+.w_90{width:90%;}
+.w_80{width:80%;}
+.w_75{width:75%;}
+.w_70{width:70%;}
+.w_60{width:60%;}
+.w_50{width:50%;}
+.w_40{width:40%;}
+.w_30{width:30%;}
+.w_20{width:20%;}
+
+/*height*/
+.h56{height:56px;}
+.h62{height:62px;}
+.h68{height:68px;}
+.h127{height:127px;}
+.h50{height:50px;}
+.h100{height:100px;}
+.h150{height:150px;}
+.h200{height:200px;}
+.h250{height:250px;}
+.h300{height:300px;}
+
+/*iconfont*/
+@font-face{font-family: "iconfont";
+  src:url('../m_font/iconfont.eot'); /* IE9*/
+  src:url('../m_font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../m_font/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../m_font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../m_font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+	font-family:"iconfont"!important;font-style:normal;
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-stroke-width:0.2px;
+	-moz-osx-font-smoothing:grayscale;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=hIEfix.png,sizingMethod=crop);zoom:1;/*IE8,IE7*/
+}

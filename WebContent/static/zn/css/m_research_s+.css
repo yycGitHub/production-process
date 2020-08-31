@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* ---------- sureserve 前端框架 ----------
+*
+* s+.css 重定义浏览器默认样式
+* Created & Modified by yangfazhi
+* Date modified 2016.11.01
+*
+*/
+
+*{word-wrap:break-word;}
+html,body{width:100%;height:100%;}
+body{font:14px/1.5 "微软雅黑";-webkit-font-smoothing:antialiased;background:#fff;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+html{-webkit-text-size-adjust:none;}
+html,body,img,div,dl,dt,dd,ul,li,input,p,h1,h2,h3,h4,h5,h6,form,textarea,span,header,menu,section{margin:0;padding:0;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6,b{font-size:100%;font-weight:normal;}
+h2{font-size:16px;}
+a{text-decoration:none;color:#333;}
+a:hover{color:#090;}
+i,em{font-style:normal;}
+input{outline:none;}
+
+/*img*/
+img{border:0;vertical-align:middle;max-width:100%;}
+a img,img{-ms-interpolation-mode:bicubic;}
+
+/*public*/
+.maxbox{width:100%;}
+.fl{float:left;}
+.fr{float:right;}
+.songti{font-family:\5b8b\4f53;}
+.martop{margin-top:10px;}
+.marleft{margin-left:10px;}
+.clearfix{overflow:hidden;_zoom:1;}
+
+/*font*/
+.font12{font-size:12px;}
+.font14{font-size:14px;}
+.font16{font-size:16px;}
+.font18{font-size:18px;}
+.font20{font-size:20px;}
+.font24{font-size:24px;}
+.font30{font-size:30px;}
+.font36{font-size:36px;}
+
+/*color*/
+.dark{color:#333;}
+.gray{color:#999;}
+.grayer{color:#ccc;}
+.blue{color:#359dee;}
+.green{color:#00af4c;}
+.green_min{color:#92cb64;}
+.orange{color:#ff5723;}
+.yellow{color:#fead20;}
+.purple{color:#9035ee;}
+.purple-min{color:#b18df9;}
+.red{color:#f00;}
+.pink{color:#fa3d86;}
+.white{color:#fff;}
+
+/*bg color*/
+.bg_white{background:#fff;}
+.bg_blue{background:#359dee;}
+.bg_green{background:#00af4c;}
+.bg_green_min{background:#92cb64;}
+.bg_orange{background:#ff5723;}
+.bg_yellow{background:#fead20;}
+.bg_purple{background:#9035ee;}
+.bg_purple-min{background:#b18df9;}
+.bg_red{background:#f00;}
+.bg_pink{background:#fa3d86;}
+
+/*iconfont*/
+@font-face{font-family: "iconfont";
+	src: url('../font/iconfont.eot'); /* IE9*/
+	src: url('../font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../font/iconfont.woff') format('woff'), /* chrome, firefox */
+	url('../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+	url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0.2px;-moz-osx-font-smoothing:grayscale;}
