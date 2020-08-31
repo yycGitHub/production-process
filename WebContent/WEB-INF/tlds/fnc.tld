@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+    
+  <description>JSTL 1.1 functions library</description>
+  <display-name>JSTL functions cms</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>fnc</short-name>
+  <uri>http://java.sun.com/jsp/jstl/functionsc</uri>
+  
+  <function>
+    <description>获取主导航列表</description>
+    <name>getMainNavList</name>
+    <function-class>com.surekam.modules.cms.utils.CmsUtils</function-class>
+    <function-signature>java.util.List getMainNavList()</function-signature>
+    <example>${fnc:getMainNavList()}</example>  
+  </function>
+  
+  <function>
+    <description>获取栏目</description>
+    <name>getCategory</name>
+    <function-class>com.surekam.modules.cms.utils.CmsUtils</function-class>
+    <function-signature>com.surekam.entity.cms.Category getCategory(java.lang.Integer)</function-signature>
+    <example>${fnc:getCategory(categoryId)}</example>  
+  </function>
+  
+  <function>
+    <description>获得栏目列表</description>
+    <name>getCategoryList</name>
+    <function-class>com.surekam.modules.cms.utils.CmsUtils</function-class>
+    <function-signature>java.util.List getCategoryList(java.lang.Integer, int, java.lang.String)</function-signature>
+    <example>${fnc:getCategoryList(parentId, number, param)}</example>  
+  </function>
+  
+  <function>
+    <description>获得栏目列表</description>
+    <name>getCategoryListByIds</name>
+    <function-class>com.surekam.modules.cms.utils.CmsUtils</function-class>
+    <function-signature>java.util.List getCategoryListByIds(java.lang.String)</function-signature>
+    <example>${fnc:getCategoryListByIds(categoryIds)}</example>  
+  </function>
+  
+  <function>
+    <description>获取文章</description>
+    <name>getArticle</name>
+    <function-class>com.surekam.modules.cms.utils.CmsUtils</function-class>
+    <function-signature>com.surekam.entity.cms.Article getArticle(java.lang.Integer)</function-signature>
+    <example>${fnc:getArticle(articleId)}</example>  
+  </function>
+  
+  <function>
+    <description>获取文章列表</description>
+    <name>getArticleList</name>
+    <function-class>com.surekam.modules.cms.utils.CmsUtils</function-class>
+    <function-signature>java.util.List getArticleList(java.lang.Integer, int, java.lang.String)</function-signature>
+    <example>${fnc:getArticleList(categoryId, number, param)}</example>  
+  </function>
+  
+  <function>
+    <description>获取链接</description>
+    <name>getLink</name>
+    <function-class>com.surekam.modules.cms.utils.CmsUtils</function-class>
+    <function-signature>com.surekam.entity.cms.Link getLink(java.lang.String)</function-signature>
+    <example>${fnc:getLink(linkId)}</example>  
+  </function>
+  
+  <function>
+    <description>获取链接列表</description>
+    <name>getLinkList</name>
+    <function-class>com.surekam.modules.cms.utils.CmsUtils</function-class>
+    <function-signature>java.util.List getLinkList( java.lang.Integer, int, java.lang.String)</function-signature>
+    <example>${fnc:getLinkList(categoryId, number, param)}</example>  
+  </function>
+  
+</taglib>

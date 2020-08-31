@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<decorators defaultdir="/WEB-INF/views">
+	
+	<!-- 默认装饰页面, 在需要装饰的页面增加<meta name="decorator" content="default"/> -->
+	<decorator name="cms_default" page="modules/cms/front/layouts/default.jsp" />
+	<decorator name="cms_default_no_menu" page="modules/cms/front/layouts/default_no_menu.jsp" />
+	<decorator name="cms_admin_default" page="layouts/defaultcms.jsp" />
+	<decorator name="default" page="layouts/default.jsp" />
+</decorators>
